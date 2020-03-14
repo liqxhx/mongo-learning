@@ -10,13 +10,28 @@
 
     <packaging>pom</packaging>
 
-    <properties>
+    <modules>
+        <module>mongo-java-driver</module>
+    </modules>
 
+    <properties>
+        <mongo.java.driver.version>3.8.1</mongo.java.driver.version>
+        <junit.version>4.11</junit.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.mongodb</groupId>
+                <artifactId>mongo-java-driver</artifactId>
+                <version>${mongo.java.driver.version}</version>
+            </dependency>
 
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
