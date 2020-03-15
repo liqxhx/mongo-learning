@@ -9,13 +9,12 @@
     <version>1.0-SNAPSHOT</version>
 
     <parent>
-        <groupId>com.lqh.learning.mongo</groupId>
+        <groupId>${project.groupId}</groupId>
         <artifactId>mongo-learning</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>${project.version}</version>
     </parent>
 
     <dependencies>
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -25,6 +24,5 @@
             <groupId>org.mongodb</groupId>
             <artifactId>mongo-java-driver</artifactId>
         </dependency>
-
     </dependencies>
 </project>
