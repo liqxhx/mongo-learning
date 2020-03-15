@@ -11,7 +11,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>mongo-java-driver</module>
+        <module>mongo-client-java-driver</module>
     </modules>
 
     <properties>
@@ -34,7 +34,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
 
     <build>
         <pluginManagement>
