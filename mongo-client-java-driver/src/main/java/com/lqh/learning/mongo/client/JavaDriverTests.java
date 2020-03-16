@@ -22,7 +22,7 @@ import org.junit.Test;
 public class JavaDriverTests {
     @Test
     public void testCurd() {
-        Mongo mongo = new com.mongodb.MongoClient("localhost", 27017);
+        Mongo mongo = new Mongo("localhost", 27017);
 
         DB db = new DB(mongo, "cc");
 
